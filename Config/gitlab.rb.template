@@ -202,11 +202,9 @@ gitlab_rails['incoming_email_address'] = "gitlab-incoming+%{key}@gmail.com"
 ####! **With third party providers, this is usually the full email address.**
 ####! **With self-hosted email servers, this is usually the user part of the
 ####!   email address.**
-# gitlab_rails['incoming_email_email'] = "gitlab-incoming@gmail.com"
 gitlab_rails['incoming_email_email'] = "gitlab@example.com" # TODO: CHANGEME
 
 #### Email account password
-# gitlab_rails['incoming_email_password'] = "[REDACTED]"
 gitlab_rails['incoming_email_password'] = "CHANGEME" # TODO: CHANGEME
 
 #### IMAP Settings
@@ -327,7 +325,7 @@ gitlab_rails['ldap_enabled'] = true
 gitlab_rails['prevent_ldap_sign_in'] = false
 gitlab_rails['ldap_servers'] = YAML.load <<-'EOS'
 main: # 'main' is the GitLab 'provider ID' of this LDAP server
-  label: 'CHANGME' # TODO: CHANGEME
+  label: 'CHANGEME' # TODO: CHANGEME
   host: 'dc.example.com' # TODO: CHANGEME
   port: 389
   uid: 'sAMAccountName'
