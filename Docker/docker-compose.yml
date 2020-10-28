@@ -6,9 +6,9 @@ services:
     hostname: gitlab
     restart: unless-stopped
     ports:
-      - "22:22"
       - "80:80"
       - "443:443"
+      - "2222:2222"
     # environment:
       # GITLAB_OMNIBUS_CONFIG: |
         # Add any other gitlab.rb configuration here, each on its own line
